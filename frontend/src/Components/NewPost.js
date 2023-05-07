@@ -4,7 +4,9 @@ const NewPost = () => {
   return (
     <>
     <div className="new-post-button">
-    <i className="new-post-icon"></i>
+    <button className='NewPost'>
+        <i className="new-post-icon"></i>
+    </button>
   </div>
   </>
   )
