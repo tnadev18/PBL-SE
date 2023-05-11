@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import clubs from '@/data/clubs';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 const ClubList = (props) => {
   const [numClubs, setNumClubs] = useState(5);
 
-  const visibleClubs = clubs.slice(0, numClubs);
+  const [showComponent,setShowComponent] = useState(true)
 
-  const handleSeeMoreClick = () => {
-    setNumClubs(numClubs + 5);
-  };
+  const route = `/subPages/${props.myProps.route}`
+  console.log(route)
 
   return (
     <div className="column-left desktop-tablet-only">
       <div className="fixed-area">
         <ul className="menus">
-          <button>
+          <Link href={route}>
+          <button >
           <li className="menu-page-item">
             <img src={props.myProps.img} />
             <div>
@@ -25,6 +27,7 @@ const ClubList = (props) => {
             </div>
           </li>
           </button>
+          </Link>
         </ul>
       </div>
     </div>
