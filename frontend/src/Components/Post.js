@@ -1,26 +1,28 @@
 import React, { useState } from 'react'
 
 
-const Post = () => {
+function Post(props){
 
   const [likes, updateLikes] = useState(0)
 
   function handleClick() {
     updateLikes(likes + 1)
   }
-
+  const imgLink = props.myProps.img
+  const title = props.myProps.name
+  console.log(props.myProps)
   return (
-    <>
+    <div className='container'>
       <div className="column-center">
         <div className="content-area">
 
           <div className="card post">
             <div className="post-header">
               <div className="post-author-info">
-                <img src="https://aissmsioit.org/wp-content/uploads/2023/03/aisa001.png" />
+                <img src={imgLink} />
                 <div>
                   <div>
-                    <span className="author-name">ML Club</span>
+                    <span className="author-name">{title}</span>
                     <i className="verified-icon"></i>
                   </div>
                   <div className="details">
@@ -87,7 +89,7 @@ const Post = () => {
 
         </div>
       </div>
-    </>
+    </div>
   )
 
 }
