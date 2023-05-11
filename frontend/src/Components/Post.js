@@ -10,7 +10,7 @@ function Post(props){
   }
   const imgLink = props.myProps.img
   const title = props.myProps.name
-  console.log(props.myProps)
+  // console.log(props.myProps)
   return (
     <div className='container'>
       <div className="column-center">
@@ -71,10 +71,7 @@ function Post(props){
                   <button onClick={handleClick}><i className="like-icon"></i></button>
                   <span>Like</span>
                 </div>
-                <div className="action">
-                  <i className="comment-icon"></i>
-                  <span>Comment</span>
-                </div>
+                
                 <div className="action">
                   <i className="share-icon"></i>
                   <span>Share</span>

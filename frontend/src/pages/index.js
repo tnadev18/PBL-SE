@@ -19,18 +19,20 @@ const clubs = [
   { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/KalakariClub1.png', name: 'Kalakari club', new: 0 }
 ];
 
-export default function Index(){
+export default function Index() {
   return (
     <main>
-    <Navbar/>
-    <div className="content-grid">
-      <RightSideBar/>
-      <div>
-        {clubs.map((element)=>{ return <Post myProps={element}/>})}
+      <Navbar />
+      <div className="content-grid">
+        <div className="leftBar">
+          {clubs.map(element => <RightSideBar myProps={element} />)}
+        </div>
+        <div>
+          {clubs.map((element) => { return <Post myProps={element} /> })}
+        </div>
+        <LeftSideBar />
+        <NewPost />
       </div>
-      <LeftSideBar/>
-      <NewPost/>
-    </div>
     </main>
   )
 }
