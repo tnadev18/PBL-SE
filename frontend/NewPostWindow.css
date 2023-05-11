@@ -1,0 +1,32 @@
+input{
+    height: 200px;
+    width: 600px;
+
+}
+
+.New-Post-Window{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10%;
+    padding: 0%;
+    border: solid;
+}
+
+.new-post-types{
+    margin: 10px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+.Video-Icon{
+    margin-right: 10%;
+}
+
+button{
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 5px;
+}
