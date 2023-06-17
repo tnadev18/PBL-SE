@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
-
+import image1 from '../images/content/346455760_1040391420271689_1732806197730749739_n.png'
+import clubs from '@/data/clubs'
 
 function Post(props){
 
-  const [likes, updateLikes] = useState(0)
+  const [likes, updateLikes] = useState(Math.floor(Math.random()*10))
 
   function handleClick() {
     updateLikes(likes + 1)
   }
-  const imgLink = props.myProps.img
-  const title = props.myProps.name
+  const imgLink =  props.myProps.img || props.crop.img
+  const title = props.myProps.name || props.crop.name
   // console.log(props.myProps)
   return (
     <div className='container'>
@@ -26,7 +27,7 @@ function Post(props){
                     <i className="verified-icon"></i>
                   </div>
                   <div className="details">
-                    <span>4h</span>
+                    <span>{Math.floor(Math.random()*12+1)}h</span>
                     <span> · </span>
                     <i className="post-settings-icon"></i>
                   </div>
@@ -34,20 +35,11 @@ function Post(props){
               </div>
               <i className="post-menu-icon"></i>
             </div>
-            <p className="post-body">As of Monday, only about 56% of people eligible to get the shot have stepped forward in a
-              nation with the
-              world’s second-worst Covid-19 outbreak.</p>
+            <p className="post-body">{props.myProps.postData || props.crop.postData}</p>
             <a className="post-image">
-              <img src="images/feed-image-1.jpg" />
-              <div className="excerpt">
-                <div className="post-info-icon-wrap">
-                  <i className="post-info-icon"></i>
-                </div>
-                <label>bloomberg.com</label>
-                <h3>India’s Unusual Vaccine Problem: Plenty of Shots, But Few Takers</h3>
-                <span>Most of the world is struggling to secure enough vaccines to inoculate their populations. India has
-                  the opposite problem: Plenty of shots, but a shortage of people willing to take them.</span>
-              </div>
+              
+              <img src={props.myProps.eventImg || props.crop.eventImg} height={10} width={100}/>
+              
             </a>
             <div className="post-reactions">
               <div className="reactions">
@@ -56,11 +48,11 @@ function Post(props){
               </div>
               <div className="comment-share">
                 <div>
-                  <span>121</span>
+                  <span>{Math.floor(Math.random()*10)}</span>
                   <span>Comments</span>
                 </div>
                 <div className="shares">
-                  <span>48</span>
+                  <span>{Math.floor(Math.random()*10)}</span>
                   <span>Shares</span>
                 </div>
               </div>

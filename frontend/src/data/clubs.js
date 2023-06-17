@@ -1,15 +1,12 @@
 const clubs = [
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/aisa001.png', name: 'ML Club', new: 5,route:'mlclub' },
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/aisa002.png', name: 'I-Bot', new: 0,route:'ibot' },
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/CodeClub1.png', name: 'Coding Club', new: 2 ,route:'codingclub'},
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/DroneClub1.png', name: 'Drone Club', new: 1 ,route:'droneclub'},
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/ElectronicInnovationClub1.png', name: 'Electronics Innovation Club', new: 0,route:'electronicsclub' },
-    { img: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/small-logo.png', name: 'Google Developer Student Clubs', new: 3, route:'gdsc' },
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/IOITFilmClub1.png', name: 'IOIT Film Club', new: 0 ,route:'filmclub'},
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/KalakariClub1.png', name: 'Kalakari club', new: 0 ,route: 'kalakari'},
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/NationalServiceScheme1.png', name: 'National Service Scheme', new: 0 ,route:'nss'},
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/MLSA-Club1.png', name: 'Microsoft Learn Student Ambassadors Club', new: 0 ,route:'mlsa'},
-    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/KalakariClub1.png', name: 'Kalakari club', new: 0 ,route:'kalakari'}
+  { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/aisa001.png', name: 'ML Club', new: 5,route:'mlclub',eventImg: 'https://i.imgur.com/bwOThOy.jpg',postData:'ML is an extremely hot topic in the industry, with all companies hiring in this field. Machine Learning Club’s purpose is to teach students about both the theory and practical applications of machine learning. Throughout the year, we’ll go through the foundations of machine learning.The club also provides students with resources and guidance to explore specific fields of AIML. Allows for networking between club members for possible project or research collaboration.  '},
+    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/CodeClub1.png', name: 'Coding Club', new: 2 ,route:'codingclub',eventImg:'https://i.imgur.com/NyIIH56.jpg',postData:''},
+    { img: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/small-logo.png', name: 'Google Developer Student Clubs', new: 3, route:'gdsc',eventImg: 'https://i.imgur.com/miZfiuL.jpg',postData:''},
+    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/IOITFilmClub1.png', name: 'IOIT Film Club', new: 0 ,route:'filmclub',eventImg:'',postData:''},
+    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/NationalServiceScheme1.png', name: 'National Service Scheme', new: 0 ,route:'nss',eventImg:'https://i.imgur.com/301yiwo.jpg',postData:''},
+    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/MLSA-Club1.png', name: 'Microsoft Learn Student Ambassadors Club', new: 0 ,route:'mlsa',eventImg:'https://i.imgur.com/cBojDhe.jpg',postData:'The Microsoft Learn Student Ambassadors program is a global group of on-campus ambassadors who are eager to help students and their communities, lead in their local tech circles, and develop technical and career skills for the future. As a Student Ambassador, you might find yourself organizing a campus or community hackathon, mentoring other students, or volunteering with an elementary school STEM class.    '},
+    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/KalakariClub1.png', name: 'Kalakari club', new: 0 ,route:'kalakari',eventImg:'https://i.imgur.com/Y91YF55.jpg',postData:'Kalakari  club of students is formed for Cultural activities. Our institute participates in various prestigious competitions like – Purushottam Karanda, Firodiya Karandak, Bharat Karandak'},
+    { img: 'https://aissmsioit.org/wp-content/uploads/2023/03/NationalServiceScheme1.png', name: 'National Service Scheme', new: 0 ,route:'nss',eventImg:'https://i.imgur.com/0rO2bNT.jpg',postData:''},
   ];
 
 export default clubs

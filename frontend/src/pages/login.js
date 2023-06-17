@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import ReactDOM from 'react-dom';
+import Index from '.'
+import { response } from 'express';
 // import { Dashboard } from './Dashboard';
 
 
@@ -10,7 +12,7 @@ export default function LoginPage(){
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const history = useHistory();
+//   const history = useHistory();
 
   const handleLogin = () => {
     // Clear any previous error message
@@ -36,7 +38,7 @@ export default function LoginPage(){
         if (data.isSuccess === 'True') {
           // Perform actions for successful login, e.g., redirect to logged-in page
           console.log('Login successful');
-          ReactDOM.render(<Dashboard/>, document.getElementById('root'));
+          response.send('hello')
         } else {
           // Handle unsuccessful login
           throw new Error('Login failed. Please check your credentials.');

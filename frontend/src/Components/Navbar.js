@@ -7,7 +7,7 @@ export default function Home() {
   <nav>
     <div className="column-left">
       <a className="fb-logo" href="/">
-        LOGO
+        
       </a>
       <label className="search">
         <i className="search-icon"></i>
@@ -19,8 +19,7 @@ export default function Home() {
     <div className="column-right">
       <span className="desktop-only">
         <a className="profile">
-          <img src="src/images/profile-80.jpg" />
-          <span>Yongmin</span>
+          
         </a>
       </span>
       <div className="action-button"><i className="plus-icon"></i></div>
