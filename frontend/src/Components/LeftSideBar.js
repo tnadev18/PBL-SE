@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import clubs from '@/data/clubs';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-const ClubList = (props) => {
 
-  const route = `/subPages/${props.myProps.route}`
+const ClubList = (props) => {
 
 
   function handleClick() {
-    props.func(props.myProps)
+    props.func([props.myProps])
+    props.bool(false)
   }
 
   return (

@@ -1,5 +1,4 @@
 import Navbar from "@/Components/Navbar"
-import Image from "next/image"
 import Post from "@/Components/Post"
 import LeftSideBar from "@/Components/LeftSideBar"
 
@@ -9,9 +8,12 @@ import { useState } from "react"
 
 export default function Index() {
 
-  const [content,setContent] = useState({})
+  const [content,setContent] = useState([])
+  const [state,setState] = useState(true)
 
-  const clubList = clubs.map(element => <LeftSideBar myProps={element} key={element.name} func={setContent} />)
+  const clubList = clubs.map(element => <LeftSideBar myProps={element} key={element.name} func={setContent} bool={setState} />)
+
+  const arr = content.map(x=><Post myProps={x} key = {x.name} crop={x} />)
 
   return (
     <main>
@@ -21,7 +23,7 @@ export default function Index() {
           {clubList}
         </div>
         <div>
-          {clubs.map((element) => { return <Post myProps={content} key={element.name} crop={element}/> })}
+          {state ? clubs.map((element) => { return <Post myProps={content} key={element.name} crop={element}/> }):arr}
         </div>
 
         <NewPost />
